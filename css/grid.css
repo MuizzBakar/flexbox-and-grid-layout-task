@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,62 +9,64 @@ body {
   background-color: black;
 }
 
+header {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+header a {
+  width: 70px;
+  background-color: grey;
+  color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
 .container {
-  margin: 100px auto;
-  /* border: 1px solid red; */
+  margin: 60px auto;
   width: 50%;
-  height: 66vh;
-}
-
-.colors1 {
   display: grid;
-  grid-template-columns: 59% 39%;
-  grid-gap: 2%;
-  margin-bottom: 10px;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "c d d"
+    "c e e";
+  gap: 10px;
 }
 
-.red {
-  width: 100%;
-  height: 200px;
-  /* background-color: red; */
+.item1 {
   background-color: maroon;
+  grid-area: a;
+  padding: 5em;
 }
 
-.yellow {
-  width: 100%;
-  height: 200px;
-  /* background-color: yellow; */
+.item2 {
   background-color: white;
+  grid-area: b;
+  padding: 5em;
 }
 
-.colors2 {
-  display: grid;
-  grid-template-columns: 44% 54%;
-  grid-gap: 2%;
-}
-
-.green {
-  width: 100%;
-  height: 222px;
-  /* background-color: green; */
+.item3 {
   background-color: teal;
+  grid-area: c;
+  padding: 5em;
 }
 
-.colors3 {
-  display: grid;
-  grid-template-rows: 40% 60%;
-  row-gap: 5%;
-}
-
-.blue {
-  width: 100%;
-  height: 90px;
-  /* background-color: blue; */
+.item4 {
   background-color: gold;
+  grid-area: d;
+  padding: 4em;
 }
 
-.blue1 {
-  width: 100%;
-  height: 122px;
+.item5 {
   background-color: navy;
+  grid-area: e;
+  padding: 5em;
 }

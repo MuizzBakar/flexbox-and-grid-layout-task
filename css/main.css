@@ -13,9 +13,28 @@ body {
   font-size: 15px;
 }
 
+header {
+  margin-top: 40px;
+  text-align: center;
+}
+
+header a {
+  width: 70px;
+  background-color: grey;
+  color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+  border-bottom: 3px solid black;
+}
+
 .container {
   width: 65%;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
 }
 
 .cars {
@@ -96,21 +115,21 @@ button:active {
   border: 1px solid hsl(0, 0%, 95%);
 }
 
-.link {
-  margin-top: 40px;
-  text-align: right;
-}
+@media screen and (max-width: 768px) {
+  header {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
 
-.link a {
-  width: 70px;
-  background-color: grey;
-  color: orange;
-  padding: 10px;
-  border-radius: 10px;
-  text-decoration: none;
-}
+  .container {
+    width: 100%;
+    margin: 50px 0 60px;
+  }
 
-.link a:hover {
-  color: white;
-  border-bottom: 3px solid black;
+  .cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
